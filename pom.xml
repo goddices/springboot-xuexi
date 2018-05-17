@@ -4,7 +4,7 @@
   <groupId>com.demo2</groupId>
   <artifactId>demoApp</artifactId> 
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
@@ -47,7 +47,16 @@
 		    <artifactId>hibernate-core</artifactId>
 		    <version>5.3.0.Final</version>
 		</dependency> -->
-		
+		<dependency>
+		  <groupId>org.springframework.boot</groupId>
+		  <artifactId>spring-boot-starter-tomcat</artifactId>  
+		</dependency>
+		<dependency>
+		  <groupId>org.apache.tomcat</groupId>
+		  <artifactId>tomcat-servlet-api</artifactId>
+		  <version>8.0.39</version>
+		  <scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -57,7 +66,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
-
+	</build> 
 
 </project>
