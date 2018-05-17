@@ -28,6 +28,7 @@ public class SampleController {
 		return String.valueOf(id);
 	}
 	
+	//annotation about GET/POST  this is a GET
 	@RequestMapping(path="/persons", method=RequestMethod.GET)
 	public List<Person> getAll () {
 		List<Person> list = new ArrayList<Person>();
@@ -38,6 +39,7 @@ public class SampleController {
 		return list;
 	}
 	
+	//another annotation about GET/POST  ,this is a POST
 	@PostMapping(path="/person")
 	@ResponseBody
 	public boolean add(@RequestHeader HttpHeaders headers,@RequestBody Person person) {
