@@ -5,7 +5,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@PropertySource(value="simple2.properties")
+@PropertySource(value="classpath:simple3.properties")
 public class SimplePropsThree {
 	@Value("hostRoot")
 	private String hostRoot;
